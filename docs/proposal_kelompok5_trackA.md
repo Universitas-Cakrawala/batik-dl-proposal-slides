@@ -8,7 +8,7 @@
 | Field | Content |
 | :--- | :--- |
 | **Group number** | Kelompok 5 |
-| **Members and NIM** | Tita Noviana — `24120500011`<br>Titanio Yudista — `24120500031`<br>Suci Fransisca Sisilia R. — `24130500008`<br>Fajar Dwiharjo — `24130500010` |
+| **Members** | Tita Noviana, Titanio Yudista, Suci Fransisca Sisilia R., Fajar Dwiharjo |
 | **Track** | A (Vision classification with transfer learning) |
 | **Proposed title** | Evaluasi *From-Scratch CNN* dan *Fine-Tuned EfficientNet-B0* untuk *Fine-Grained Classification* Motif Batik Semarang pada Kondisi Deformasi Kain |
 
@@ -17,9 +17,9 @@
 ### 2. Problem Statement
 *Maximum 120 words.*
 
-* **Supported decision/prediction:** Mendukung sistem kurasi digital museum tekstil, pengarsipan warisan budaya, dan verifikasi katalog *e-commerce* otomatis untuk 10 kelas motif batik Semarang.
-* **End users and failure cost:** Kurator museum, peneliti tekstil, dan pengelola *platform* kriya. Kesalahan klasifikasi menyebabkan pencemaran basis data arsip budaya (*archive contamination*), kesalahan pelabelan katalog komersial, dan degradasi reputasi kuratorial.
-* **Appropriateness of deep learning:** Citra batik dunia nyata mengalami deformasi *non-rigid*, lipatan kain (*fabric folds*), variasi skala dan pencahayaan, serta tingginya kemiripan *inter-class* ornamen latar (*isen-isen*) yang gagal dimodelkan secara representatif oleh ekstraksi fitur manual (SIFT/HOG).
+* **Supported decision/prediction:** Mengklasifikasikan 10 motif batik Semarang untuk kurasi museum, pengarsipan warisan budaya, dan verifikasi katalog *e-commerce*.
+* **End users and failure cost:** Kurator, peneliti tekstil, dan pengelola *platform* kriya. Prediksi keliru dapat mencemari arsip, salah memberi label produk, dan menurunkan kepercayaan pengguna.
+* **Appropriateness of deep learning:** Citra menghadapi deformasi *non-rigid*, lipatan, perubahan skala dan pencahayaan, serta kemiripan *inter-class* pada *isen-isen*; pola ini sulit ditangkap fitur manual seperti SIFT/HOG.
 
 ---
 
