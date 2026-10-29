@@ -302,11 +302,11 @@ function GroupCard({ code, model, detail, role, tone = indigo }: { code: string;
 const Design: Page = () => (
   <Frame section="04 / Desain eksperimen" title="8 konfigurasi × 3 seed = 24 run" subtitle="Hanya satu faktor yang berubah di setiap perbandingan.">
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
-      <GroupCard code="G1" model="Custom CNN 4 blok" detail="0,39 M parameter · random init" role="baseline" />
-      <GroupCard code="G2" model="EfficientNet-B0" detail="4,02 M parameter · random init" role="kontrol arsitektur" />
-      <GroupCard code="G3" model="EfficientNet-B0" detail="bobot ImageNet · aug ON" role="model utama" tone={green} />
-      <GroupCard code="G4" model="EfficientNet-B0" detail="bobot ImageNet · aug OFF" role="ablation" tone={amber} />
-      <GroupCard code="G5" model="EfficientNet-B0 two-stage" detail="linear probe → unfreeze features[5:]" role="suplemen" />
+      <GroupCard code="G1" model="Custom CNN 4 blok" detail="0,39 M parameter · from scratch" role="baseline" />
+      <GroupCard code="G2" model="EfficientNet-B0" detail="4,02 M parameter · from scratch" role="kontrol arsitektur" />
+      <GroupCard code="G3" model="EfficientNet-B0" detail="ImageNet · fine-tune semua layer · aug ON" role="model utama" tone={green} />
+      <GroupCard code="G4" model="EfficientNet-B0" detail="ImageNet · fine-tune semua layer · aug OFF" role="ablation" tone={amber} />
+      <GroupCard code="G5" model="EfficientNet-B0 two-stage" detail="fine-tune 2 tahap: head → features[5:]" role="suplemen" />
       <GroupCard code="G1g–G3g" model="G1–G3 pada grayscale-eq" detail="tanpa shortcut warna" role="protokol kedua" tone={amber} />
     </div>
     <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginTop: 36 }}>
