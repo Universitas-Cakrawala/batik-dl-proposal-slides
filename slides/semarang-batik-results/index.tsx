@@ -604,6 +604,10 @@ const Repro: Page = () => (
           <Point>Windows native belum didukung (import resource)</Point>
           <Point>ResNet-50 (rencana proposal) tidak dijalankan; diganti EfficientNet-B0 scratch (G2) sebagai kontrol arsitektur</Point>
         </ul>
+        <div style={{ ...label, color: indigo, marginTop: 26, marginBottom: 12 }}>Rekomendasi (10× data/compute)</div>
+        <ul style={{ margin: 0, paddingLeft: 30, listStyle: 'disc' }}>
+          <Point>Beberapa kain per motif, lalu evaluasi leave-one-cloth-out</Point>
+        </ul>
       </div>
     </div>
   </Frame>
